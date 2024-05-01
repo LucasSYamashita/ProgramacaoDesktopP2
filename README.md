@@ -7,3 +7,6 @@ Tassio Henrique
 
 ## Tema
 Sistema de Gestão para uma Clínica Odontológica
+
+## Link Trello
+https://trello.com/invite/b/RavGWJie/ATTIbd382f7de0378775538368b87043e0064919F883/trabalho-p2-programacao-desktop
