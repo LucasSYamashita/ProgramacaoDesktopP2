@@ -10,19 +10,23 @@ package Entidades;
  */
 import java.util.Date;
 
+@Entity
 public class Produto {
-    private int codigoProduto;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String codigoProduto;
     private String marca;
     private String categoria;
     private String fornecedor;
     private double valorProduto;
     private double valorVenda;
+    @Temporal(TemporalType.DATE)
     private Date validadeProduto;
     private int quantidadeRecebida;
     private int quantidadeMinEstoque;
-    
-    // Construtor, getters e setters
 
+}
     public int getCodigoProduto() {
         return codigoProduto;
     }
