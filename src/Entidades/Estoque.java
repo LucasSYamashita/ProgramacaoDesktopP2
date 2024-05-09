@@ -8,11 +8,15 @@ package Entidades;
  *
  * @author User
  */
+@Entity
 public class Estoque {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private int estoqueAtual;
     private int estoqueAnterior;
-    
-    // Construtor, getters e setters
+
+}
     public int getEstoqueAtual() {
         return estoqueAtual;
     }
