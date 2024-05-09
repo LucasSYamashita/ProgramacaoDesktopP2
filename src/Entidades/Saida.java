@@ -10,11 +10,16 @@ package Entidades;
  */
 import java.util.Date;
 
+@Entity
 public class Saida {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String motivoSaida;
+    @Temporal(TemporalType.DATE)
     private Date dataSaida;
-    
-    // Construtor, getters e setters
+
+}
 
     public String getMotivoSaida() {
         return motivoSaida;
