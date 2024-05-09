@@ -7,22 +7,27 @@ package Entidades;
 
 import java.util.Date;
 
+@Entity
 public class Funcionario {
-    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String nome;
     private String cpf;
+    @Temporal(TemporalType.DATE)
     private Date dataNascimento;
     private String endereco;
-    private char sexo;
+    private String sexo;
     private String telefone;
     private String email;
+    @Temporal(TemporalType.DATE)
     private Date dataAdmissao;
     private double salario;
     private String cargo;
     private String login;
     private String senha;
- 
-    // Construtor, getters e setters
+
+}
     public String getNome() {
         return nome;
     }
