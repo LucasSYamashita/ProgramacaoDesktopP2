@@ -10,17 +10,12 @@ package Entidades;
  */
 import java.util.Date;
 
+@Entity
 public class Validade {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Temporal(TemporalType.DATE)
     private Date dataFabricacao;
-    
-    // Construtor, getters e setters
 
-    public Date getDataFabricacao() {
-        return dataFabricacao;
-    }
-
-    public void setDataFabricacao(Date dataFabricacao) {
-        this.dataFabricacao = dataFabricacao;
-    }
-    
 }
