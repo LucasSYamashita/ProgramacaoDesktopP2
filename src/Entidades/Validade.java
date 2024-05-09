@@ -18,4 +18,29 @@ public class Validade {
     @Temporal(TemporalType.DATE)
     private Date dataFabricacao;
 
+    public Validade() {
+    }
+
+    public Validade(Date dataFabricacao) {
+        this.dataFabricacao = dataFabricacao;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Date getDataFabricacao() {
+        return dataFabricacao;
+    }
+
+    public void setDataFabricacao(Date dataFabricacao) {
+        this.dataFabricacao = dataFabricacao;
+    }
+}
+
+
 }
