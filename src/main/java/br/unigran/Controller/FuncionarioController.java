@@ -11,7 +11,7 @@ public class FuncionarioController {
         }
 
         public Funcionario buscarPorLoginESenha(String login, String senha) {
-            return funcionarioDAO.buscarPorLoginESenha(login, senha);
+            return funcionarioDAO.buscarPorId(login, senha);
         }
 
         public void salvar(Funcionario funcionario) {

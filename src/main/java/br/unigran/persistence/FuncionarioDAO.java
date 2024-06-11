@@ -42,5 +42,12 @@ public class FuncionarioDAO {
         }
 
     }
-}
 
+    public Funcionario buscarPorId(String login, String senha) {
+        Funcionario o = null;
+        return o;
+    }
+
+    public void fechar() {
+    }
+}
