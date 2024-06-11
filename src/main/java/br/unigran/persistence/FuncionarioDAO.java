@@ -34,15 +34,20 @@ public class FuncionarioDAO {
     }
 
     public void excluir(Long id) {
-        EntityTransaction transaction = entityManager.getTransaction();
-        transaction.begin();
-        Funcionario funcionario = entityManager.find(Funcionario.class, id);
-        entityManager.remove(funcionario);
-        transaction.commit();
+        Funcionario funcionario = buscarPorId(id);
+        if (funcionario != null) {
+            entityManager.getTransaction().begin();
+            entityManager.remove(funcionario);
+            entityManager.getTransaction().commit();
+        }
+
+    }
+
+    public Funcionario buscarPorId(String login, String senha) {
+        Funcionario o = null;
+        return o;
     }
 
     public void fechar() {
-        entityManager.close();
     }
 }
-

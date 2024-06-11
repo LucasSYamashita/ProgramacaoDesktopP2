@@ -10,6 +10,10 @@ public class FuncionarioController {
             funcionarioDAO = new FuncionarioDAO();
         }
 
+        public Funcionario buscarPorLoginESenha(String login, String senha) {
+            return funcionarioDAO.buscarPorId(login, senha);
+        }
+
         public void salvar(Funcionario funcionario) {
             funcionarioDAO.salvar(funcionario);
         }
