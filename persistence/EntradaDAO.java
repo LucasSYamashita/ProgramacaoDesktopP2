@@ -1,5 +1,7 @@
 package br.unigran.persistence;
 
+import br.unigran.entidades.Entrada;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
